@@ -232,6 +232,10 @@ ol {
   align-self: flex-end;
 }
 
+.more-button {
+  margin-top: 30px;
+}
+
 /* Правая часть с видео + текст */
 
 .content__details {
@@ -275,16 +279,17 @@ ol {
 }
 
 .content__list {
-  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.content__list-item:not(:last-child) {
-  margin-bottom: 25px;
+.content__list-item {
+  padding: 0px 3px 0px 3px;
 }
 
 .content__card-link {
   display: block;
-  margin: 2px;
   text-decoration: none;
 }
 
@@ -311,7 +316,6 @@ ol {
 .content__video-card {
   display: flex;
   width: 394px;
-  padding: 2px;
   align-items: flex-start;
 }
 
